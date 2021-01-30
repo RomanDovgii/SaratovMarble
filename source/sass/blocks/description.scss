@@ -6,7 +6,7 @@
 }
 
 .description--reversed {
-  .description__slider {
+  .description__slider-wrapper {
     order: 2;
   }
 
@@ -118,5 +118,6 @@
     padding-left: 0;
     padding-right: 0;
     padding-bottom: 20px;
+    padding-top: 20px;
   }
 }
