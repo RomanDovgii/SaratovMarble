@@ -15,3 +15,14 @@
 
   background-color: #444444;
 }
+
+@media (max-width: $tablet-breakpoint) {
+  .examples {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .examples__heading {
+    font-size: 30px;
+  }
+}
