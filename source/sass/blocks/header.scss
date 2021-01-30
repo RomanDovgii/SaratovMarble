@@ -60,30 +60,30 @@
     display: none;
   }
 
-  .header__button {
-    border: none;
-    background: none;
-    display: block;
+  // .header__button {
+  //   border: none;
+  //   background: none;
+  //   display: block;
 
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -25px;
+  //   width: 30px;
+  //   height: 30px;
+  //   position: absolute;
+  //   top: 100%;
+  //   left: 50%;
+  //   margin-left: -25px;
 
-    border-top: 30px solid $button-background;
-    border-left: 30px solid transparent;
-    border-right: 30px solid transparent;
+  //   border-top: 30px solid $button-background;
+  //   border-left: 30px solid transparent;
+  //   border-right: 30px solid transparent;
 
-    &:hover,
-    &:focus {
-      outline: none;
-      opacity: 0.7;
-    }
+  //   &:hover,
+  //   &:focus {
+  //     outline: none;
+  //     opacity: 0.7;
+  //   }
 
-    &:active {
-      opacity: 0.3;
-    }
-  }
+  //   &:active {
+  //     opacity: 0.3;
+  //   }
+  // }
 }

@@ -35,4 +35,8 @@
   .promo__description {
     @include text-padding-mobile;
   }
+
+  .promo__description {
+    margin-bottom: 20px;
+  }
 }

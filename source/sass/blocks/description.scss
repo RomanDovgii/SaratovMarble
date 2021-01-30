@@ -1,8 +1,12 @@
 .description {
   background-color: $section-background;
-  margin-top: 60px;
+  margin-top: 30px;
 
   @include shadow;
+
+  &--first {
+    margin-top: 0;
+  }
 }
 
 .description--reversed {
@@ -18,8 +22,6 @@
 .description__wrapper {
   display: flex;
 }
-
-
 
 .description__slider-wrapper {
   flex: 2;

@@ -16,8 +16,11 @@
   position: relative;
   margin-top: 25px;
   width: 100%;
+  max-width: 800px;
   height: 0;
-  padding-top: 136%;
+  padding-top: 52%;
+
+  margin: 0 auto;
 }
 
 .directions__img {
@@ -33,5 +36,24 @@
   .directions__heading,
   .directions__description {
     @include text-padding-mobile;
+  }
+
+  .directions__img-wrapper {
+    max-width: none;
+
+    position: relative;
+    margin-top: 25px;
+    width: 100%;
+    height: 0;
+    padding-top: 136%;
+  }
+
+  .directions__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
   }
 }
