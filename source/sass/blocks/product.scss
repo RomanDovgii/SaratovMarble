@@ -4,6 +4,8 @@
   padding-left: 50px;
   font-size: 45px;
   font-weight: 700;
+
+  text-align: center;
 }
 
 .product__content {
@@ -51,9 +53,24 @@
 }
 
 .product__select {
-  padding: 2px 20px;
-  border-radius: 10px;
+  width: 250px;
+  padding: .375rem .75rem;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #ffffff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
   outline: none;
+
+  option {
+    font-weight: 400;
+    display: block;
+    white-space: pre;
+    min-height: 1.2rem;
+    padding: 0px 2px 1px;
+  }
 }
 
 .product__price {
