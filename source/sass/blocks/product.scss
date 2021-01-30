@@ -46,14 +46,41 @@
 .product__label {
   font-size: 20px;
   font-weight: 600;
+  display: flex;
+  align-items: center;
 
   &:not(:first-child) {
     margin-top: 5px;
   }
 }
 
+.product__select-wrapper {
+  margin-left: 15px;
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+
+    position: absolute;
+    top: 50%;
+    right: 20px;
+
+    margin-top: -7px;
+    margin-right: -5px;
+
+    border-left: 3px solid #495057;
+    border-bottom: 3px solid #495057;
+
+    transform: rotate(-45deg);
+  }
+}
+
 .product__select {
   appearance: none;
+  position: relative;
   width: 250px;
   padding: .375rem .75rem;
   font-size: 15px;
