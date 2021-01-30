@@ -1,10 +1,10 @@
 .header {
   @include shadow;
 
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   background-color: #ffffff;
-  min-height: 136px;
+  min-height: 100px;
 }
 
 .header--detached {
