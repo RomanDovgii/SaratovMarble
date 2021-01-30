@@ -37,7 +37,10 @@
   .directions__description {
     @include text-padding-mobile;
   }
+}
 
+
+@media (max-width: $small-tablet-breakpoint) {
   .directions__img-wrapper {
     max-width: none;
 
