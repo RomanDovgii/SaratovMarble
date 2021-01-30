@@ -3,7 +3,8 @@
   flex-direction: column;
 }
 
-.information a {
+.information__logo,
+.information__address {
   text-decoration: none;
 
   text-align: center;
@@ -32,4 +33,16 @@
   font-size: 10px;
   font-weight: 400;
   color: #ebebeb;
+  text-align: center;
+  text-decoration: none;
+}
+
+@media (max-width: $tablet-breakpoint) {
+  .information__logo {
+    display: none;
+  }
+
+  .information__address {
+    margin-top: 0;
+  }
 }
