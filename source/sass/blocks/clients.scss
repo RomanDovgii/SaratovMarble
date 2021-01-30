@@ -38,7 +38,7 @@
 .clients__list {
   list-style: none;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -46,4 +46,6 @@
   width: 300px;
 
   margin-top: 30px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
