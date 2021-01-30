@@ -1,8 +1,8 @@
 {
-  "name": "pognali-19",
+  "name": "saratov-marble",
   "version": "17.0.0",
   "private": true,
-  "description": "Личный проект «Погнали» от HTML Academy",
+  "description": "Сайт компании Саратов Мрамор",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "9.5.x",
