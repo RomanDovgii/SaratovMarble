@@ -44,5 +44,8 @@
 
   .information__address {
     margin-top: 0;
+    @include text-padding-mobile;
   }
+
+
 }

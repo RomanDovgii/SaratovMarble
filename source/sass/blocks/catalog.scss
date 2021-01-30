@@ -21,7 +21,7 @@
   padding-left: 100px;
 
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -65,5 +65,12 @@
   &:active {
     transition: opacity 0.5s;
     opacity: 0.7;
+  }
+}
+
+@media (max-width: $big-phone-breakpoint) {
+  .catalog__list {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
