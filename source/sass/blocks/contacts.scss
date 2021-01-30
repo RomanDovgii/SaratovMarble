@@ -16,10 +16,10 @@
 
   display: flex;
   align-items: center;
+}
 
-  &:not(:first-child) {
-    margin-top: 15px;
-  }
+.contacts a {
+  margin-top: 15px;
 
   &:hover,
   &:focus {
