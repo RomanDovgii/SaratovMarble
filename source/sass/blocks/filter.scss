@@ -39,6 +39,9 @@
   }
 
   .filter__item {
-    margin-left: 0;
+
+    &:not(:first-child) {
+      margin-left: 0;
+    }
   }
 }
