@@ -7,14 +7,25 @@
   background-color: #444444;
 }
 
+.promo__heading {
+  font-size: 35px;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
 .promo__description {
   text-align: center;
 
   max-width: 500px;
-
-  margin: 0 auto;
   margin-top: 30px;
   margin-bottom: 30px;
-
   font-size: 18px;
+
+  min-width: 75%;
+}
+
+.promo__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
