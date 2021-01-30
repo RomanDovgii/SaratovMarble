@@ -1,0 +1,49 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+
+  background-color: $button-background;
+
+  border-radius: 10px;
+  transition: box-shadow 1s;
+
+  width: 200px;
+
+  &:hover {
+    @include shadow-hover;
+  }
+
+  &:focus {
+    outline: none;
+    @include shadow-hover;
+  }
+
+  &:active {
+    @include shadow-active;
+  }
+}
+
+.card__img {
+  background-color: #444444;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+
+  border-radius: 10px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.card__heading {
+  text-align: center;
+  margin-top: 15px;
+  color: #ebebeb;
+}
+
+.card__price {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  text-align: center;
+  color: #ebebeb;
+}

@@ -1,0 +1,43 @@
+.about-company__heading {
+  text-align: center;
+
+  margin-top: 50px;
+
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.about-company__subheading {
+  margin-top: 25px;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.about-company__text {
+  margin-top: 20px;
+  text-align: justify;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.about-company__download {
+  text-decoration: none;
+  display: block;
+  margin-top: 20px;
+
+  font-size: 25px;
+  font-weight: 600;
+
+  color: #151924;
+
+  transition: opacity 0.5s;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}

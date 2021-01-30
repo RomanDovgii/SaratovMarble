@@ -1,0 +1,27 @@
+.header {
+  @include shadow;
+
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #ffffff;
+  min-height: 136px;
+}
+
+.header--detached {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__logo {
+  width: 340px;
+  height: 76px;
+
+  background-color: #333333;
+}

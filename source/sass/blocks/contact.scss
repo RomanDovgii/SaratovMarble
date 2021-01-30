@@ -1,0 +1,57 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact__heading {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.contact__link,
+.contact__text {
+  text-decoration: none;
+  color: #151924;
+
+  display: flex;
+  align-items: center;
+
+  font-size: 20px;
+  margin-top: 10px;
+
+  span {
+    margin-right: 10px;
+  }
+}
+
+.contact__link {
+  transition: opacity 0.3s;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+.contact__icon {
+  margin-right: 10px;
+
+  &--phone {
+    width: 25px;
+    height: 25px;
+  }
+
+  &--mail {
+    width: 26px;
+    height: 26px;
+  }
+
+  &--marker {
+    width: 40px;
+    height: 34px;
+  }
+}

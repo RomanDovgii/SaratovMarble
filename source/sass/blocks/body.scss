@@ -1,0 +1,21 @@
+.body {
+  font-family: "Fira Sans", "Arial", sans-serif;
+  font-size: 16px;
+  min-width: 320px;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.body--header-detached {
+  padding-top: 136px;
+}
+
+.body__main {
+  flex: 1 0 auto;
+}
+
+.body__footer {
+  flex: 0 0 auto;
+}
