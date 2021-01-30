@@ -23,7 +23,11 @@
 .product__slider {
   width: 100%;
   padding-bottom: 56.5%;
-  background-color: #444444;
+
+  background-image: url("../img/products/block.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .product__info {
