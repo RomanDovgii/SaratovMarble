@@ -6,6 +6,12 @@
 
   &--footer {
     align-items: baseline;
+
+    .navigation__item a {
+      font-size: 20px;
+      font-weight: 400;
+      color: #ebebeb;
+    }
   }
 }
 
@@ -33,7 +39,7 @@
   color: #151924;
 
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 400;
 
   transition: opacity 0.5s;
 
@@ -54,7 +60,7 @@
 
   &--active {
     a {
-      text-decoration: underline;
+      font-weight: 600;
     }
   }
 }
