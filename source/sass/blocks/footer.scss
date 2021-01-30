@@ -22,3 +22,10 @@
 .footer__menu {
   flex: 1;
 }
+
+@media (max-width: $tablet-breakpoint) {
+  .footer__wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+}

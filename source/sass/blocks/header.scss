@@ -25,3 +25,11 @@
 
   background-color: #333333;
 }
+
+@media (max-width: $tablet-breakpoint) {
+  .header__wrapper {
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  }
+}
