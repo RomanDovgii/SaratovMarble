@@ -11,16 +11,16 @@
   width: 200px;
 
   &:hover {
-    @include shadow-hover;
+    @include shadow-card-hover;
   }
 
   &:focus {
     outline: none;
-    @include shadow-hover;
+    @include shadow-card-hover;
   }
 
   &:active {
-    @include shadow-active;
+    @include shadow-card-active;
   }
 }
 

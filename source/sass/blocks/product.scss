@@ -47,6 +47,12 @@
   }
 }
 
+.product__select {
+  padding: 2px 20px;
+  border-radius: 10px;
+  outline: none;
+}
+
 .product__price {
   margin-top: 20px;
   font-size: 20px;
@@ -54,6 +60,10 @@
 }
 
 .product__order {
+  border: none;
+  background-color: $button-background;
+  border-radius: 25px;
+  color: #ffffff;
   margin-top: 20px;
   padding: 10px 20px;
 
