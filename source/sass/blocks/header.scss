@@ -15,6 +15,10 @@
   z-index: 250;
 }
 
+.header__button {
+  display: none;
+}
+
 .header__wrapper {
   display: flex;
   justify-content: space-between;
@@ -41,9 +45,45 @@
 
   .header__navigation {
     display: none;
+
+    &--active {
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      top: 100%;
+      width: 100%;
+      background-color: #ffffff;
+    }
   }
 
   .header__contacts {
     display: none;
+  }
+
+  .header__button {
+    border: none;
+    background: none;
+    display: block;
+
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -25px;
+
+    border-top: 30px solid $button-background;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+
+    &:hover,
+    &:focus {
+      outline: none;
+      opacity: 0.7;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }

@@ -15,6 +15,7 @@
   flex: 2;
   background-color: #444444;
   height: 400px;
+  width: 100%;
 
   .contacts-all__iframe {
     width: 100%;
@@ -49,5 +50,7 @@
 
   .contacts-all__contacts {
     margin-top: 30px;
+
+    @include text-padding-mobile;
   }
 }

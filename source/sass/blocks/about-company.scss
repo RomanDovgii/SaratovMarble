@@ -33,7 +33,7 @@
   align-items: center;
   margin-top: 20px;
 
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 600;
 
   color: #151924;
@@ -50,6 +50,10 @@
   }
 }
 
+.about-company__icon {
+  margin-right: 10px;
+}
+
 @media (max-width: $tablet-breakpoint) {
   .about-company {
     display: flex;
@@ -63,5 +67,11 @@
 
   .about-company__subheading {
     font-size: 25px;
+  }
+
+  .about-company__text,
+  .about-company__heading,
+  .about-company__subheading {
+    @include text-padding-mobile;
   }
 }

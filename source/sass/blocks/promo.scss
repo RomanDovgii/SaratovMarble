@@ -29,3 +29,10 @@
   flex-direction: column;
   align-items: center;
 }
+
+@media (max-width: $tablet-breakpoint) {
+  .promo__heading,
+  .promo__description {
+    @include text-padding-mobile;
+  }
+}

@@ -19,8 +19,6 @@
 }
 
 .contacts a {
-  margin-top: 15px;
-
   &:hover,
   &:focus {
     opacity: 0.8;
@@ -28,6 +26,10 @@
 
   &:active {
     opacity: 0.3;
+  }
+
+  &:not(:first-child) {
+    margin-top: 15px;
   }
 }
 
