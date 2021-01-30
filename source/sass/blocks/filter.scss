@@ -29,3 +29,14 @@
     }
   }
 }
+
+@media (max-width: $tablet-breakpoint) {
+  .filter__list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .filter__item {
+    margin-left: 0;
+  }
+}

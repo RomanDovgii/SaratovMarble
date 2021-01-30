@@ -9,7 +9,7 @@
   text-decoration: none;
   color: #151924;
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 00;
 
 
   text-align: right;
@@ -49,5 +49,14 @@
   &--mail {
     width: 26px;
     height: 26px;
+  }
+}
+
+@media (max-width: $tablet-breakpoint) {
+  .contacts {
+    &--footer {
+      justify-content: start;
+      align-items: center;
+    }
   }
 }

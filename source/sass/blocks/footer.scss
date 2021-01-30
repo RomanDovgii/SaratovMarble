@@ -28,4 +28,18 @@
     flex-direction: column;
     align-items: center;
   }
+
+  .footer__contacts {
+    order: 1;
+  }
+
+  .footer__menu {
+    margin-top: 20px;
+    order: 2;
+  }
+
+  .footer__information {
+    margin-top: 20px;
+    order: 3;
+  }
 }

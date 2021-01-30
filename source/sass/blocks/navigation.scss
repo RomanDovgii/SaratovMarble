@@ -64,3 +64,18 @@
     }
   }
 }
+
+@media (max-width: $tablet-breakpoint) {
+  .navigation__list {
+    &--footer {
+      flex-direction: column;
+      align-items: center;
+
+      .navigation__item {
+        &:not(:first-child) {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}
