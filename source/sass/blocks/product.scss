@@ -18,10 +18,10 @@
 
 .product__slider-wrapper {
   flex: 2;
+  max-width: 800px;
 }
 
 .product__slider {
-  max-width: 850px;
   padding-bottom: 56.5%;
 
   background-image: url("../img/products/block.jpg");
@@ -138,6 +138,7 @@
   .product__content {
     display: flex;
     flex-direction: column;
+    align-items: center;
     padding: 0;
   }
 
