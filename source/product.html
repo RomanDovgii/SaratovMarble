@@ -95,6 +95,15 @@
                   </div>
                 </div>
               </div>
+
+              <div class="swiper-shadow swiper-shadow--top"></div>
+              <div class="swiper-shadow swiper-shadow--bottom"></div>
+              <div class="swiper-shadow swiper-shadow--left"></div>
+              <div class="swiper-shadow swiper-shadow--right"></div>
+
+              <div class="swiper-button-prev--description"></div>
+              <div class="swiper-button-next--description"></div>
+
               <div class="swiper-pagination"></div>
             </div>
           </div>
@@ -240,10 +249,22 @@
   <script>
     const swiper = new Swiper('.swiper-container', {
       loop: true,
+      slidesPerView: 1,
 
-      // If we need pagination
+      centeredSlides: true,
+
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+
       pagination: {
         el: '.swiper-pagination',
+      },
+
+      navigation: {
+        nextEl: '.swiper-button-next--description',
+        prevEl: '.swiper-button-prev--description',
       },
     });
   </script>

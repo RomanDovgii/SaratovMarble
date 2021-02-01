@@ -9,12 +9,15 @@
 
   display: flex;
 
+  overflow: auto;
+  white-space: nowrap;
+
   padding-left: 150px;
 }
 
 .filter__item {
   &:not(:first-child) {
-    margin-left: 20px;
+    margin-left: 26px;
   }
 
   a {
@@ -33,6 +36,8 @@
 
 @media (max-width: $tablet-breakpoint) {
   .filter__list {
+    overflow: visible;
+    white-space: normal;
     flex-direction: column;
     align-items: center;
     padding-left: 0;

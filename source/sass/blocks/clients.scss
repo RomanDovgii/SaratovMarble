@@ -10,10 +10,15 @@
   font-weight: 700;
 }
 
+.clients__card {
+  padding-left: 29px;
+  padding-right: 29px;
+}
+
 .clients__img {
   width: 100%;
   height: 200px;
-  object-fit: contain;
+  object-fit: none;
 }
 
 .clients__name {
