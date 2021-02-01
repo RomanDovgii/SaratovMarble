@@ -19,3 +19,11 @@
   padding-right: 20px;
   padding-left: 20px;
 }
+
+@mixin shadow-card-hover {
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 1);
+}
+
+@mixin shadow-card-active {
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+}
