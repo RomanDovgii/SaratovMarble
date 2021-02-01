@@ -10,18 +10,10 @@
   font-weight: 700;
 }
 
-.clients__card {
-  margin-left: 10px;
-  margin-right: 10px;
-  min-width: 300px;
-}
-
 .clients__img {
   width: 100%;
   height: 200px;
   object-fit: contain;
-
-  background-color: #ffffff;
 }
 
 .clients__name {
@@ -33,6 +25,7 @@
 .clients__slider {
   padding-top: 20px;
   padding-bottom: 50px;
+  overflow: hidden;
 }
 
 .clients__list {
@@ -40,12 +33,4 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-}
-
-.clients__card {
-  width: 300px;
-
-  margin-top: 30px;
-  margin-left: 15px;
-  margin-right: 15px;
 }

@@ -9,6 +9,9 @@
   <link rel="preload" href="./fonts/Firasansbold.woff2" as="font" type="font/woff2" crossorigin>
 
   <link rel="stylesheet" href="./css/style.min.css">
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 <body class="body">
   <header class="body__header header">
@@ -101,7 +104,26 @@
       <section class="main__examples examples">
         <h2 class="examples__heading">Примеры использования нашего сырья</h2>
         <div class="examples__slider-wrapper">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="description__slider">
 
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="description__slider">
+
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="description__slider">
+
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
         </div>
       </section>
     </div>
@@ -199,5 +221,15 @@
       </section>
     </div>
   </footer>
+
+  <script>
+    const swiper = new Swiper('.swiper-container', {
+      loop: true,
+
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+  </script>
 </body>
 </html>

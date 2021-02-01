@@ -9,6 +9,10 @@
   <link rel="preload" href="./fonts/Firasansbold.woff2" as="font" type="font/woff2" crossorigin>
 
   <link rel="stylesheet" href="./css/style.min.css">
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 <body class="body">
   <header class="body__header header">
@@ -71,8 +75,25 @@
 
         <div class="product__content">
           <div class="product__slider-wrapper">
-            <div class="product__slider">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="product__slider">
 
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product__slider">
+
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product__slider">
+
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
             </div>
           </div>
           <div class="product__info">
@@ -213,5 +234,16 @@
       </section>
     </div>
   </footer>
+
+  <script>
+    const swiper = new Swiper('.swiper-container', {
+      loop: true,
+
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+  </script>
 </body>
 </html>

@@ -21,7 +21,7 @@
 }
 
 .product__slider {
-  width: 100%;
+  max-width: 850px;
   padding-bottom: 56.5%;
 
   background-image: url("../img/products/block.jpg");
@@ -143,5 +143,17 @@
 
   .product__info {
     @include text-padding-mobile;
+  }
+}
+
+@media (max-width: $big-phone-breakpoint) {
+  .product__label {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .product__select-wrapper {
+    margin-left: 0;
   }
 }

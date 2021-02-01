@@ -26,6 +26,7 @@
 .description__slider-wrapper {
   flex: 2;
   width: 100%;
+  max-width: 880px;
 
   display: flex;
   justify-content: center;
@@ -33,6 +34,7 @@
 }
 
 .description__slider {
+  position: relative;
   overflow: hidden;
   height: 0;
   width: 100%;
