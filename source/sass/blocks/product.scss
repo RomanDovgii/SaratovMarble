@@ -124,6 +124,18 @@
   font-weight: 600;
   max-width: 400px;
   cursor: pointer;
+
+  transition: opacity 0.5s;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (max-width: $tablet-breakpoint) {

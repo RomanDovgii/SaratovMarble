@@ -19,6 +19,8 @@
 }
 
 .contacts a {
+  transition: opacity 0.5s;
+
   &:hover,
   &:focus {
     opacity: 0.8;
