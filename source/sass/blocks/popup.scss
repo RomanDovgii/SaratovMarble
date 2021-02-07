@@ -1,0 +1,246 @@
+.popup {
+  position: fixed;
+  max-width: 800px;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+
+  top: 200px;
+  z-index: 500;
+  border-radius: 25px;
+
+  padding: 30px 20px;
+
+  display: flex;
+  flex-direction: column;
+
+  &--sent {
+    animation-name: sent;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+  }
+
+  &--error {
+    animation-name: error;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+  }
+
+  &--open {
+    animation-name: open;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+
+  &--close {
+    animation-name: close;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+
+  &--removed {
+    display: none;
+  }
+}
+
+.popup__form {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.popup__heading {
+  font-size: 25px;
+  font-weight: 600;
+  padding: 30px 30px;
+  text-align: center
+}
+
+.popup__text {
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 20px;
+  max-width: 500px;
+}
+
+.popup__form {
+  align-self: center;
+  margin-top: 20px;
+  max-width: 60%;
+}
+
+.popup__label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+
+  &:not(:first-child) {
+    margin-top: 20px;
+  }
+}
+
+.popup__input {
+  width: 100%;
+  max-width: 420px;
+  min-height: 50px;
+  padding: 5px 20px;
+  border: 1px solid #444444;
+  outline: none;
+  transition: box-shadow 0.5s;
+  border-radius: 50px;
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: 500;
+
+  &:hover,
+  &:focus {
+    @include shadow-hover;
+  }
+}
+
+.popup__submit {
+  border: none;
+  margin-top: 20px;
+  max-width: 420px;
+  font-size: 20px;
+  width: 100%;
+  min-height: 50px;
+  padding: 10px 15px;
+  border-radius: 50px;
+  align-self: center;
+  color: #ffffff;
+  background-color: #73706c;
+
+  transition: box-shadow 0.8s;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    @include shadow-hover;
+  }
+
+  &:active {
+    @include shadow-active;
+  }
+}
+
+.popup__link {
+  text-decoration: none;
+
+  color: #000000;
+  font-size: 25px;
+  font-weight: 500;
+
+  align-self: center;
+  margin-top: 5px;
+
+  transition: opacity 0.5s;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:first-of-type {
+    margin-top: 25px;
+  }
+}
+
+.popup__close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 30px;
+  height: 30px;
+  background: none;
+  border: none;
+  outline: none;
+
+  transition: opacity 0.5s;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 35%;
+    right: 50%;
+    width: 30px;
+    height: 4px;
+    margin-top: 2px;
+    margin-right: -15px;
+    border-radius: 25px;
+    background-color: #444444;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@keyframes sent {
+  30% {
+    transform: translateX(-50px);
+  }
+  100% {
+    transform: translateX(2000px)
+  }
+}
+
+@keyframes error {
+  20% {
+    transform: translateX(-10px)
+  }
+  40% {
+    transform: translateX(10px);
+  }
+  60% {
+    transform: translateX(-10px);
+  }
+  80% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes open {
+  from {
+    transform: translateY(-2000px);
+  }
+  50% {
+    transform: translateY(50px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes close {
+  50% {
+    transform: translateY(50px);
+  }
+  to {
+    transform: translateY(-2000px);
+  }
+}
